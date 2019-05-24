@@ -2,10 +2,9 @@
 //  AppDelegate.swift
 //  AccessibilityElementsExample
 //
-//  Created by Marco Contino on 4/13/19.
+//  Created by Marco Contino on 4/14/19.
 //  Copyright © 2019 Marco Contino. All rights reserved.
 //
-
 import UIKit
 
 @UIApplicationMain

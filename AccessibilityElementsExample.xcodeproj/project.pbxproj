@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A9440976226222220079A420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9440975226222220079A420 /* AppDelegate.swift */; };
-		A9440978226222220079A420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9440977226222220079A420 /* ViewController.swift */; };
 		A944097B226222220079A420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9440979226222220079A420 /* Main.storyboard */; };
 		A944097D226222250079A420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A944097C226222250079A420 /* Assets.xcassets */; };
 		A9440980226222250079A420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A944097E226222250079A420 /* LaunchScreen.storyboard */; };
+		A944098C226223400079A420 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A944098B226223400079A420 /* Profile.swift */; };
+		A944098E2262235C0079A420 /* AccessibilityElementsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A944098D2262235C0079A420 /* AccessibilityElementsExampleViewController.swift */; };
+		A9460B8F22636B2900AA66E9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9460B8E22636B2900AA66E9 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9440972226222220079A420 /* AccessibilityElementsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityElementsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9440975226222220079A420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9440977226222220079A420 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A944097A226222220079A420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A944097C226222250079A420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A944097F226222250079A420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9440981226222250079A420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A944098B226223400079A420 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		A944098D2262235C0079A420 /* AccessibilityElementsExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityElementsExampleViewController.swift; sourceTree = "<group>"; };
+		A9460B8E22636B2900AA66E9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		A9440974226222220079A420 /* AccessibilityElementsExample */ = {
 			isa = PBXGroup;
 			children = (
-				A9440975226222220079A420 /* AppDelegate.swift */,
-				A9440977226222220079A420 /* ViewController.swift */,
-				A9440979226222220079A420 /* Main.storyboard */,
+				A9440989226222780079A420 /* Model */,
+				A9440987226222440079A420 /* View */,
+				A94409882262226A0079A420 /* Controller */,
+				A944098A2262228C0079A420 /* Other */,
 				A944097C226222250079A420 /* Assets.xcassets */,
-				A944097E226222250079A420 /* LaunchScreen.storyboard */,
-				A9440981226222250079A420 /* Info.plist */,
 			);
 			path = AccessibilityElementsExample;
+			sourceTree = "<group>";
+		};
+		A9440987226222440079A420 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9440979226222220079A420 /* Main.storyboard */,
+				A944097E226222250079A420 /* LaunchScreen.storyboard */,
+				A9460B8E22636B2900AA66E9 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A94409882262226A0079A420 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A944098D2262235C0079A420 /* AccessibilityElementsExampleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9440989226222780079A420 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A944098B226223400079A420 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A944098A2262228C0079A420 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A9440975226222220079A420 /* AppDelegate.swift */,
+				A9440981226222250079A420 /* Info.plist */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9440978226222220079A420 /* ViewController.swift in Sources */,
+				A9460B8F22636B2900AA66E9 /* ProfileView.swift in Sources */,
+				A944098C226223400079A420 /* Profile.swift in Sources */,
 				A9440976226222220079A420 /* AppDelegate.swift in Sources */,
+				A944098E2262235C0079A420 /* AccessibilityElementsExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8R5LH7XGK;
-				INFOPLIST_FILE = AccessibilityElementsExample/Info.plist;
+				INFOPLIST_FILE = AccessibilityElementsExample/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L8R5LH7XGK;
-				INFOPLIST_FILE = AccessibilityElementsExample/Info.plist;
+				INFOPLIST_FILE = AccessibilityElementsExample/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
