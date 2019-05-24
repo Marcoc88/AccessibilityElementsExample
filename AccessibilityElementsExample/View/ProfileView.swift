@@ -63,7 +63,7 @@ class ProfileView: UIView {
       var elements = [UIAccessibilityElement]()
       
       /*
-       Create a custom accessiblity element for name and update the accessiblityLabel so that it is more clear to the
+       Create a custom accessibility element for name and update the accessiblityLabel so that it is more clear to the
        user that the user is viewing a profile
        */
       if let name = name.text {
